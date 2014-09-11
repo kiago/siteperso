@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Kevin AGOSTINHO - Junior Engineer</title>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+
+
+    <link href="css/portfolio.css" rel="stylesheet">
+
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+
+        <script src="js/jquery.fullPage.js"></script>
+
+
+        <script type="text/javascript">
+
+            $(document).ready(function() {
+                var isPhoneDevice = "ontouchstart" in document.documentElement; 
+                $(document).ready(function() {
+                    if(isPhoneDevice){
+            //mobile
+
+            $('#fullpage').fullpage({
+                anchors: ['home', 'services','me','work','getintouch'],
+                navigation: true,
+                loopBottom: true,
+                autoScrolling: false,
+                navigationPosition: 'right',
+                navigationTooltips: ['Home', 'My Services','Me','My Work','Get in Touch !']
+
+            });   
+        }
+        else{
+                //desktop  
+
+                $('#fullpage').fullpage({
+                    anchors: ['home', 'services','me','work','getintouch'],
+                    navigation: true,
+                    loopBottom: true,
+                    navigationPosition: 'right',
+                    navigationTooltips: ['Home', 'My Services','Me','My Work','Get in Touch !']
+
+                });                
+
+            }
+        });
+
+
+
+
+            });
+</script>
+</head>
+
+<body>
+    <div id="fullpage">
+        <!-- Navigation -->
+        <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+        <nav id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+                <li class="sidebar-brand">
+                </li>
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#services">Services</a>
+                </li>
+                <li>
+                    <a href="#me">Me</a>
+                </li>
+                <li>
+                    <a href="#work">Work</a>
+                </li>
+                <li>
+                    <a href="#getintouch">Contact</a>
+                </li>
+
+            </ul>
+        </nav>
+
+        <!-- Header -->
+        <div class="section " id="section1">
+
+            <div id="top" class="header">
+                <div class="text-vertical-center">
+                    <h1>Kevin Agostinho</h1>
+                    <h3>Junior Engineer</h3>
+                    <br>
+                    <a href="#about" class="btn btn-dark btn-lg">Check me out !</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Services -->
+        <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+        <div class="section " id="section2">
+            <section class="services bg-primary">
+                <div class="container">
+                    <div class="row text-center">
+                        <div class="col-lg-10 col-lg-offset-1">
+                            <h2>Our Services</h2>
+                            <hr class="small">
+                            <div class="row">
+
+
+                              <div class="col-md-3 col-sm-6">
+                                <div class="service-item">
+                                    &nbsp;
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="service-item">
+                                    <span class="fa-stack fa-4x">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-shield fa-stack-1x text-primary"></i>
+                                    </span>
+                                    <h4>
+                                        <strong>Project Management</strong>
+                                    </h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    <a href="#" class="btn btn-light">Learn More</a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="service-item">
+                                    <span class="fa-stack fa-4x">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-shield fa-stack-1x text-primary"></i>
+                                    </span>
+                                    <h4>
+                                        <strong>Web Development</strong>
+                                    </h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    <a href="#" class="btn btn-light">Learn More</a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="service-item">
+                                  &nbsp;
+                              </div>
+                          </div>
+                      </div>
+                      <!-- /.row (nested) -->
+                      <div class="row">
+
+
+                          <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                &nbsp;
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-shield fa-stack-1x text-primary"></i>
+                                </span>
+                                <h4>
+                                    <strong>Information Systems</strong>
+                                </h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <a href="#" class="btn btn-light">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-shield fa-stack-1x text-primary"></i>
+                                </span>
+                                <h4>
+                                    <strong>Service Name</strong>
+                                </h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <a href="#" class="btn btn-light">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                &nbsp;
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+
+                    <!-- /.row -->
+                </div>
+                <!-- /.container -->
+            </section>
+        </div>
+
+
+        <!-- vertical centered text -->
+        <div class="section" id="section3">
+            <section>
+                <div class="slide" id="slide1">
+                    <h1>Clickable</h1>
+                    <h1> blabla</h1>
+                    <h1> &nbsp;</h1>
+
+                    <h1> c</h1>
+
+
+                    <h2>Vertically Centered Text</h2>
+                </div>
+                <div class="slide" id="slide2">
+                 <h1>Clickable</h1>
+                 <h1> blabla</h1>
+                 <h1> &nbsp;</h1>
+
+                 <h1> c</h1>
+
+
+                 <h2>Vertically Centered Text</h2>
+
+             </div>
+         </section>
+     </div>
+
+
+
+     <!-- Portfolio -->
+     <div class="section " id="section4">
+
+        <section class="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 col-lg-offset-1 text-center">
+                        <h2>My work</h2>
+                        <hr class="small">
+                        <div class="row">
+
+                            <div class="col-md-6">
+                                <div class="portfolio-item">
+                                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                                        <div class="caption">
+                                            <div class="caption-content">
+                                                <i class="fa fa-search-plus fa-3x"></i>
+                                            </div>
+                                        </div>
+                                        <img src="img/portfolio-1.jpg" class="img-responsive" alt="">
+                                                            </a>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="portfolio-item">
+                                        <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                                            <div class="caption">
+                                                <div class="caption-content">
+                                                    <i class="fa fa-search-plus fa-3x"></i>
+                                                </div>
+                                            </div>
+                                            <img src="img/portfolio-2.jpg" class="img-responsive" alt="">
+                                                                </a>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="portfolio-item">
+                                        <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                                            <div class="caption">
+                                                <div class="caption-content">
+                                                    <i class="fa fa-search-plus fa-3x"></i>
+                                                </div>
+                                            </div>
+                                            <img src="img/portfolio-3.jpg" class="img-responsive" alt="">
+                                                                </a>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="portfolio-item">
+                                        <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                                            <div class="caption">
+                                                <div class="caption-content">
+                                                    <i class="fa fa-search-plus fa-3x"></i>
+                                                </div>
+                                            </div>
+                                            <img src="img/portfolio-4.jpg" class="img-responsive" alt="">
+                                                                </a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.row (nested) -->
+                            </div>
+                            <!-- /.col-lg-10 -->
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                    <!-- /.container -->
+                </section>
+
+
+
+            </div>
+
+
+
+
+            <!-- contact -->
+            <div class="section" id="section5">
+                <section id="contact" class="contact">
+                    <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed">
+                    <br />
+                    <small>
+                        <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
+                    </small>
+                </iframe>
+            </section>
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-10 col-lg-offset-1 text-center">
+                            <h4><strong>Kevin AGOSTINHO</strong>
+                            </h4>
+                            <p>39 avenue de la belle gabrielle<br>Nogent sur Marne, 94130 FRANCE</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fa fa-phone fa-fw"></i> +33 6 30 70 43 23</li>
+                                <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:kevin.agostinho@outlook.com">kevin.agostinho@outlook.com</a>
+                                </li>
+                            </ul>
+                            <br>
+                            <ul class="list-inline">
+
+                                <li>
+                                    <a href="https://www.facebook.com/kiago"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                                </li>
+                                 <li>
+                                    <a href="https://plus.google.com/104972571974098571812"><i class="fa fa-google-plus fa-fw fa-3x"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/pub/kevin-agostinho/58/b58/a37"><i class="fa fa-linkedin fa-fw fa-3x"></i></a>
+                                </li>
+                            </ul>
+                            <hr class="small">
+                            <p class="text-muted">Copyright &copy; Kiago 2014</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+                </div>
+    <!-- POPUP portfolio -->
+
+<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Title</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/submarine.png" class="img-responsive img-centered" alt="">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ENDPOPUP portfolio -->
+
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            $("#sidebar-wrapper").toggleClass("active");
+
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+</script>
+
+</body>
+
+</html>
